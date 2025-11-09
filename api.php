@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 header('Content-Type: application/json');
 
 // --- Configuration and Setup ---
-$db_file = 'connect_app.sqlite';
+$db_file = '/tmp/connect_app.sqlite';
 
 function getDbConnection() {
     global $db_file;
